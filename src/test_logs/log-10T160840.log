@@ -1,0 +1,6 @@
+16:08:42.826 [main] INFO  com.phonebook.TestBase -- ********************** TESTING IN PROGRESS *************************
+16:08:52.592 [main] INFO  com.phonebook.TestBase -- Test is started: [loginExistedUserPositiveTest2]
+16:08:55.175 [main] INFO  com.phonebook.TestBase -- Test is started with data: [password=Password11@, email=admin_admin_20242@gmail.com]
+16:09:01.054 [main] ERROR com.phonebook.TestBase -- Test is FAILED: [loginExistedUserPositiveTest2], Screenshot: [C:\Users\Ich\Desktop\2_Phonebook\src\test_screenshots\screen-1728569340355.png]
+16:09:01.055 [main] INFO  com.phonebook.TestBase -- Test is ended: [loginExistedUserPositiveTest2]
+16:09:01.070 [main] INFO  com.phonebook.TestBase -- ********************** ALL TEST END *************************

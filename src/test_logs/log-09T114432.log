@@ -1,0 +1,7 @@
+11:44:34.657 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Ich\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+11:44:41.177 [main] INFO  com.phonebook.core.BaseHelper -- Test is started: [createAccountPositiveTest1]
+11:44:43.130 [main] INFO  com.phonebook.core.BaseHelper -- Test is failed: [createAccountPositiveTest1]
+11:44:43.131 [main] INFO  com.phonebook.core.BaseHelper -- Test is ended: [createAccountPositiveTest1]
+11:44:43.144 [main] INFO  com.phonebook.core.BaseHelper -- Test is finished

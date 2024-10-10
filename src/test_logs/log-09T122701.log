@@ -1,0 +1,7 @@
+12:27:03.607 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Ich\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+12:27:20.223 [main] INFO  com.phonebook.core.BaseHelper -- Test is started: [loginNegativeWOEmailTest]
+12:27:22.886 [main] INFO  com.phonebook.core.BaseHelper -- Test is passed: [loginNegativeWOEmailTest]
+12:27:22.887 [main] INFO  com.phonebook.core.BaseHelper -- Test is ended: [loginNegativeWOEmailTest]
+12:27:22.909 [main] INFO  com.phonebook.core.BaseHelper -- Test is finished

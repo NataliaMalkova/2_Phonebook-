@@ -1,0 +1,5 @@
+13:07:31.325 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Ich\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+13:07:38.269 [main] INFO  com.phonebook.TestBase -- Test is started: [loginExistedUserPositiveTest1]
+13:07:43.115 [main] INFO  com.phonebook.TestBase -- Test is finished

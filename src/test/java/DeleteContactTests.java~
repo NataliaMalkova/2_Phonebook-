@@ -1,0 +1,36 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class DeleteContactTests extends TestBase {
+    private final String CONTACT_NAME = "TestName";
+    
+
+    @BeforeMethod
+    public void preCondition() {
+        login("Iness09111112@gmail.com", "Password1@");
+        addNewContactPositiveData(CONTACT_NAME);
+    }
+
+    @Test
+    public void createOneAndDeleteOneContactTest() {
+        int sizeBefore = actualSizeOfContacts();
+        System.out.println("Size before deletion: " + sizeBefore);
+        deleteOneContact();
+        wait.until(ExpectedConditions.numberOfElementsToBeLessThan(By.className(CONTACT_LOCATOR), sizeBefore));
+        int sizeAfterDelete = actualSizeOfContacts();
+        System.out.println("Size after deletion: " + sizeAfterDelete);
+        // Проверяем, что после удаления количество контактов уменьшилось на 1
+        Assert.assertEquals(sizeBefore - 1, sizeAfterDelete, "Count is not equal");
+    }
+
+    @Test
+    public void deleteAllContactsTests() {
+        deleteAllContacts();
+        Assert.assertEquals(actualSizeOfContacts(), 0, "Count is not equal");
+    }
+
+}
+
