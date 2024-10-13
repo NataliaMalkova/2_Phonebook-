@@ -11,7 +11,7 @@ public class DeleteContactTests extends TestBase {
 
     @BeforeMethod
     public void precondition() {
-        app.getUserHelper().login("admin_admin_20242@gmail.com", "Password1@");
+        app.getUserHelper().login("admin_admin_q20242@gmail.com", "Password1@");
         app.getContactHelper().addNewContactPositiveData(CONTACT_NAME);
     }
 
