@@ -48,7 +48,7 @@ public class LoginTests extends TestBase {
         try {
             app.getUserHelper().logout();
         } catch (Exception e) {
-           // throw new RuntimeException(e);
+            // throw new RuntimeException(e);
         }
     }
 }

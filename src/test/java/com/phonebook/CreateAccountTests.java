@@ -2,10 +2,16 @@ package com.phonebook;
 
 import com.phonebook.model.User;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class CreateAccountTests extends TestBase {
+
+    @BeforeMethod
+    public void preCondition(){
+    }
 
     @Test
     public void createAccountPositiveTest1() {
@@ -58,5 +64,13 @@ public class CreateAccountTests extends TestBase {
          * Назначение: assertAll() используется для проверки всех утверждений, сделанных с помощью SoftAssert, в конце теста.
          * Если одно или несколько утверждений не прошли, assertAll() вызовет исключение и тест будет помечен как неудавшийся
          */
+    }
+    @AfterMethod
+    public void postCondition(){
+        try {
+            app.getUserHelper().logout();
+        } catch (Exception e) {
+            // throw new RuntimeException(e);
+        }
     }
 }
