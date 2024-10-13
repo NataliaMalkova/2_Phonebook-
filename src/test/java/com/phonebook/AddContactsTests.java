@@ -10,7 +10,7 @@ public class AddContactsTests extends TestBase {
 
     @BeforeMethod
     public void preCondition() {
-        app.getUserHelper().login("admin_admin_20242@gmail.com", "Password1@");
+        app.getUserHelper().login("admin_admin_q20242@gmail.com", "Password1@");
     }
 
     @Test(invocationCount = 1, priority = 1)
