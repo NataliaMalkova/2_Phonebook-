@@ -26,7 +26,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginExistedUserPositiveTest2(ITestContext context) {
         String email = "admin_admin_20242@gmail.com";
-        String password = "Password1@";
+        String password = "Password11@";
         context.setAttribute("email",email);
         context.setAttribute("password",password);
         app.getUserHelper().login(email, password);
